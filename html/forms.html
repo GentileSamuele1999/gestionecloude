@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <a href="index.html">torna alla pagina principale</a>
+    <h1>Esempio bottone</h1>
+    <h2>login form</h2>
+
+    <form action="">
+      <label for="usr">Username:</label>
+      <input
+        type="text"
+        name="username"
+        placeholder="insert username"
+        id="usr"
+        required
+      />
+
+      <label for="pwd">Password:</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="insert password"
+        id="pwd"
+        required
+      />
+
+      <input type="submit" value="Login" />
+    </form>
+
+    <h2>Registration Form</h2>
+    <form action="">
+      <label>
+        Nome:
+        <input type="text" name="Nome:" />
+      </label>
+
+      <label>
+        Cognome:
+        <input type="text" name="Cognome:" />
+      </label>
+      <p></p>
+
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Data di nascita:
+        <input type="date" name="data" />
+      </label>
+      <br />
+      <br />
+      <label>
+        <input type="color" name="colore" />
+      </label>
+      <label>
+        <input type="radio" name="sesso" />
+        Maschio
+      </label>
+      <label>
+        <input type="radio" name="femmina" />
+        Femmina
+      </label>
+      <br />
+
+      <h2>hobbies:</h2>
+      <label>
+        <input type="checkbox" name="hobbies" />
+        pittura
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="hobbies" />
+        musei
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="hobbies" />
+        montagna
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="hobbies" />
+        altro
+      </label>
+
+      <p></p>
+      <label>
+        comune di nascita
+        <select name="comune">
+          <option value="Torino">Torino</option>
+          <option value="Livorno">Livorno</option>
+          <option value="Cagliari">Cagliari</option>
+        </select>
+      </label>
+
+      <p></p>
+
+      <label>
+        Lascia il tuo CV:
+        <input type="file" name="file" />
+      </label>
+
+      <p></p>
+    </form>
+    <button>Save</button>
+  </body>
+</html>
