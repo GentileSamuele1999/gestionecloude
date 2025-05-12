@@ -1,0 +1,39 @@
+
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(147, 21, 21);
+    font-size: 80pt;
+    text-transform: uppercase;
+}
+
+p{
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(28, 53, 79);
+    font-size: 18pt;
+}
+
+
+
+
+
+ul li{
+    text-transform: capitalize;
+    list-style-type: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(28, 53, 79);
+    font-size: 14pt;
+}
+
+
+a {
+
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    color:rgb(98, 27, 160);
+}
+
+
+
+
