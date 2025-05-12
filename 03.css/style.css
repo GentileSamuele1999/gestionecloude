@@ -13,10 +13,6 @@ p{
     font-size: 18pt;
 }
 
-
-
-
-
 ul li{
     text-transform: capitalize;
     list-style-type: none;
@@ -24,16 +20,32 @@ ul li{
     color: rgb(28, 53, 79);
     font-size: 14pt;
 }
-
-
+/*a è riferito al link*/
 a {
-
+   
     text-decoration: none;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 14pt;
-    color:rgb(98, 27, 160);
+
 }
 
+.green {
+    background-color: rgb(80, 252, 100);
+}
 
+a[title] {color: rgb(98, 27, 160) }
 
+/*mettendo il cursore sul link appare la sottolineatura*/
+a:hover{text-decoration: underline;}
 
+/*in primo esempio ho fatto un article con 3 paragrafi. */
+article p{
+    color:gray;
+}
+
+/*font più spesso per il primo paragrafo lorem ipsum*/
+article p:first-child {
+    font-weight: 700;
+}
+/*sfondo prima riga primo paragrafo che rimarrà sempre su tutta la prima linea*/
+article p:first-child::first-line{ background-color: rgb(222, 209, 192);}
