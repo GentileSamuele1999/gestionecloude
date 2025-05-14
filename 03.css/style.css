@@ -1,81 +1,145 @@
+body {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 
+    selettore di tipo
+*/
 h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgb(147, 21, 21);
-  font-size: 80pt;
-  text-transform: uppercase;
+    font-size: 2.5em;
+    color: red;
 }
 
-p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(28, 53, 79);
-  font-size: 18pt;
+h3 {
+    background: lightblue;
 }
 
-ul li {
-  text-transform: capitalize;
-  list-style-type: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(28, 53, 79);
-  font-size: 14pt;
+/* 
+    selettore  list
+*/
+p,
+li {
+    font-size: 1.2em;
+    color: blue;
 }
-/*a è riferito al link*/
+
+/*
+    selettore di tipo
+*/
 a {
-  text-decoration: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 14pt;
+    text-decoration: none;
+    color: cadetblue;
 }
 
-.green {
-  background-color: rgb(80, 252, 100);
+/* 
+    selettore di classe
+*/
+.special {
+    color: brown
 }
 
+.highlight {
+    background-color: yellow;
+}
+
+.special.highlight {
+    color: red;
+    background-color: yellow;
+}
+
+
+/*
+    selettore discendente
+*/
+nav ul {
+    list-style-type: none;
+}
+
+/* 
+    selettore prossimo fratello
+*/
+h1+p {
+    text-transform: uppercase;
+}
+
+/* 
+    selettore di attributo
+*/
 a[title] {
-  color: rgb(98, 27, 160);
+    color: chartreuse;
 }
 
-/*mettendo il cursore sul link appare la sottolineatura*/
-a:hover {
-  text-decoration: underline;
-}
 
-/*in primo esempio ho fatto un article con 3 paragrafi. */
 article p {
-  color: gray;
+    color: gray
 }
 
-/*font più spesso per il primo paragrafo lorem ipsum*/
+/* 
+    selettore pseudo classe
+*/
 article p:first-child {
-  font-weight: 700;
+    font-weight: 800;
 }
-/*sfondo prima riga primo paragrafo che rimarrà sempre su tutta la prima linea*/
-article p:first-child::first-line {
-  background-color: rgb(222, 209, 192);
+
+/* 
+    selettore pseudo elemento
+*/
+article p::first-line {
+    background-color: lightgoldenrodyellow;
 }
 
 .box {
-  background-color: rgb(220, 231, 250);
-  border: 1px solid black;
-
-  padding: 10px;
-  padding-left: 30px;
-  margin: 10px;
+    background-color: lightblue;
+    border: 1px solid black;
+    width: 50%;
+    padding: 30px;
+    margin: 50px;
 }
 
 section {
-  background-color: rgb(112, 165, 98);
-  border: solid 1px black;
-  padding: 30px;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 30px;
 }
 
-section > div {
-  background-color: lightblue;
-  border: solid 1px black;
-  width: 300px;
-  height: 100px;
-  margin: 10px;
-  text-align: center;
-  box-sizing: border-box;
-  overflow-y: scroll;
-  overflow-x: hidden;
+section>div {
+    background-color: lightgreen;
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+section+p>span {
+    background-color: lightgreen;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    height: 100px; /*ignorata perchè non è un blocco*/
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin-right: 2px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav>ul>li>a{
+    color: black;
+    text-decoration: none;
+}   
+
+nav>ul>li:hover {
+    background-color: blue;
+}
+nav>ul>li:hover>a {
+    color: white;
 }
