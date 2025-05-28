@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <ul>
-        <li><a href="index.html">torna all'indice</a></li>
-    </ul>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+        grid-template-areas:
+          "header header"
+          "nav nav"
+          "aside main"
+          "footer footer";
+          column-gap: 10px;
+          row-gap: 10px;
+      }
+
+      header {
+        grid-area: header;
+        background-color: rgb(203, 149, 149);
+      }
+      nav {
+        grid-area: nav;
+        background-color: blueviolet;
+      }
+      aside {
+        grid-area: aside;
+        background-color: chocolate;
+      }
+
+      main {
+        grid-area: main;
+        background-color: bisque;
+      }
+      footer {
+        grid-area: footer;
+        background-color: cyan;
+      }
+    </style>
+
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <h1>layoutgrid</h1>
-    
-</body>
+  </head>
+  <header>Header</header>
+  <nav>
+    <ul>
+      <li><a href="index.html">torna all'indice</a></li>
+    </ul>
+  </nav>
+  <body>
+    <aside>Aside</aside>
+    <main>Main</main>
+    <footer>Footer</footer>
+  </body>
 </html>

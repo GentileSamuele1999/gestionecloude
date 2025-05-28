@@ -1,0 +1,23 @@
+
+body>h1 {
+    
+    font-family:verdana;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(68, 85, 131);
+}
+
+form, p{
+    
+  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+button{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    background-color: rgb(158, 170, 194);
+    border-radius: 5px;
+}

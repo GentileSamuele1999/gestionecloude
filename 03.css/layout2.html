@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <ul>
-        <li><a href="index.html">torna all'indice</a></li>
+      <li><a href="index.html">torna all'indice</a></li>
     </ul>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <h1>layoutflex</h1>
-    
-</body>
+    <style>
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(161, 18, 18);
+        border-radius: 3px;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      header > h1 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 40px;
+        color: white;
+      }
+      article {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: rgb(76, 112, 124);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 3px;
+        flex: 1;
+        color: white;
+      }
+      section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      article:nth-of-type(3) {
+        flex: 2;
+      }
+      .flex-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .flex-box button {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(223, 233, 242);
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+        border-radius: 3px;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sample flexbox example</h1>
+    </header>
+    <section>
+      <article>
+        <h2>First article</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+          accusantium beatae quia eaque, ut enim aspernatur exercitationem ipsam
+          voluptas aliquid dolorum, suscipit rem sit quam ducimus eveniet
+          consequuntur voluptatem non?
+        </p>
+      </article>
+      <article>
+        <h2>Second article</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus
+          vero commodi fugiat distinctio soluta cum laborum praesentium,
+          voluptate dolorem quod aut rerum voluptatum aliquid possimus quibusdam
+          optio quo? Illum!
+        </p>
+      </article>
+      <article>
+        <h2>Third article</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+          consectetur optio, enim fugiat voluptatum error labore, ducimus magni
+          fuga ex expedita totam ab eum? Nobis nisi ipsum dicta pariatur
+          corrupti?
+        </p>
+      </article>
+      <article>
+        <div class="flex-box">
+          <button>b1</button>
+          <button>b2</button>
+          <button>b3</button>
+          <button>b4</button>
+        </div>
+      </article>
+    </section>
+  </body>
 </html>
